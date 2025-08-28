@@ -45,16 +45,30 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex items-center space-x-4 text-gray-700 font-medium">
-          <a href="#how-we-work" className="hover:text-black transition-colors">How We Work</a>
-          <a href="#ai-engine" className="hover:text-black transition-colors">AI Engine</a>
-          <a href="#what-we-do" className="hover:text-black transition-colors">What we do</a>
-        </nav>
+ {/* Navigation Links */}
+{/* Navigation Links */}
+{/* Navigation Links */}
+<nav className="hidden md:flex flex-1 items-center">
+  {/* Centered Links Group */}
+  <div className="flex flex-1 justify-center space-x-4 text-gray-700 font-medium">
+    <a href="#how-we-work" className="hover:text-black transition-colors">How We Work</a>
+    <a href="#ai-engine" className="hover:text-black transition-colors">AI Engine</a>
+    <a href="#what-we-do" className="hover:text-black transition-colors">What we do</a>
+  </div>
 
-        {/* Call-to-action Button */}
-        <button className="bg-gray-800 text-white font-semibold py-2 px-6 rounded-full transition-colors hover:bg-black">
-          Contact Us
-        </button>
+  {/* Contact Button on the right with hover glow effect */}
+  <div>
+    <a 
+      href="#contactus" 
+      className="px-8 py-2 bg-gray-900 rounded-full text-white font-semibold 
+                 transition-all duration-300 ease-in-out 
+                 hover:bg-gray-700 hover:shadow-lg hover:shadow-gray-700/50"
+    >
+      Contact Us
+    </a>
+  </div>
+</nav>
+       
       </div>
     </motion.header>
   );
